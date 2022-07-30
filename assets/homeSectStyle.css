@@ -1,4 +1,5 @@
-.home-section.active{
+.home-section.active,
+.project-section.active{
     position: relative;
     opacity: 1;
     z-index: 8;
