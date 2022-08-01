@@ -1,5 +1,6 @@
 .home-section.active,
-.project-section.active{
+.project-section.active,
+.about-section.active{
     position: relative;
     opacity: 1;
     z-index: 8;
@@ -15,7 +16,7 @@
     position: fixed;
     top: 0;
     opacity: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .hero-heading{
@@ -34,4 +35,7 @@
     width: 50%;
     object-fit: cover;
     opacity: 0.2;
+}
+a{
+    color: red;
 }

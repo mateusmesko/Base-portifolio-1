@@ -2,15 +2,15 @@
     width: 100%;
     min-height: 100vh;
     padding: 150px 100px 100px;
-    position: relative;
+    position: fixed;
     top: 0;
-    transition: 1s;
+    transition: 0.5s;
     opacity: 0;
 }
 
 .project-heading{
     font-size: 100px;
-    background: purple;
+    background: rgb(48, 48, 48);
     text-transform: capitalize;
     text-align: center;
     margin-bottom: 50px;
@@ -27,7 +27,7 @@
 .project-card{
     height: 400px;
     position: relative;
-    border: 1px solid purple;
+    border: 1px solid rgb(139, 0, 0);
     border-radius: 20px;
 }
 
@@ -76,13 +76,27 @@
     color: #fff;
     cursor: pointer;
 }
+.project-title{
+    width: 100%;
+    height: 100%;
+    color: rgb(139, 0, 0);
+    position: absolute;
+    top: 30%;
+    left: 0;
+    object-fit: cover;
+    transition: 0.5;
+}
 .project-btn.live{
     background: none;
     border: 2px solid #fff;
 }
-.project-card:hover .project-img{
+.project-card:hover .project-title{
     filter: blur(20px);
+    opacity: 0.3;
 }
 .project-card:hover .project-content{
     opacity: 1;
+}
+.project-card:hover{
+    transform: scale(1.1);
 }
