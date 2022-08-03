@@ -1,6 +1,7 @@
 .home-section.active,
 .project-section.active,
-.about-section.active{
+.about-section.active, 
+.contact-section.active {
     position: relative;
     opacity: 1;
     z-index: 8;
